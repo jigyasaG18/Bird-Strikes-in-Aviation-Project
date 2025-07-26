@@ -1,0 +1,19 @@
+//DAX Calculations Used 
+
+//%StrikesWithDamage 
+
+%StrikesWithDamage = 
+DIVIDE( 
+COUNTROWS(FILTER('Bird Strikes', 'Bird Strikes'[Effect: Indicated Damage] 
+= "Caused damage")), 
+COUNTROWS('Bird Strikes') 
+) * 100 
+
+//%StrikesWithWarning 
+
+%StrikesWithWarning = 
+DIVIDE( 
+COUNTROWS(FILTER('Bird Strikes', 'Bird Strikes'[Pilot warned of birds or 
+wildlife?] = "Y")), 
+COUNTROWS('Bird Strikes') 
+) * 100
