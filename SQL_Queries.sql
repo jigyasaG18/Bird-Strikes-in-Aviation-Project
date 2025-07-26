@@ -1,6 +1,6 @@
 //Key Table: bird_strikes 
+//Manually created and loaded with data having 25K+ records across key fields: 
   
-Manually created and loaded with data having 25K+ records across key fields: 
 CREATE TABLE bird_strikes ( 
 record_id INT PRIMARY KEY, 
 aircraft_type VARCHAR(50), 
